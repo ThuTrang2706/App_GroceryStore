@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TTCN"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/arrow_back"
+            android:id="@+id/back_main"
+            android:background="#48dbfb"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin cá nhân"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:background="#48dbfb"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edtten_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên nhân viên"
+        android:textSize="20dp"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/edt_phone_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:textSize="20dp"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/edt_mail_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="20dp"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/edt_birth_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày sinh"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:enabled="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:textSize="20dp"
+            android:layout_weight="4"
+            android:layout_marginTop="15dp"
+            android:enabled="false"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/tv_doimatkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#1e90ff"
+            android:textColor="@android:color/white"
+            android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_fix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#48dbfb"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Lưu"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#48dbfb"
+            android:textColor="@color/black"
+            android:enabled="false"/>
+    </LinearLayout>
+
+
+</LinearLayout>

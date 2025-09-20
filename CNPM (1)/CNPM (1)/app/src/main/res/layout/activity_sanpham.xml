@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/arrow_back"
+            android:id="@+id/back_main"
+            android:background="#48dbfb"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý sản phẩm"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:background="#48dbfb"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/edttimkiem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tìm kiếm sản phẩm"
+            android:textSize="20dp"
+             />
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/btntimkiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm"
+            android:textSize="20dp"
+            android:backgroundTint="#48dbfb"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edtmasanpham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã sản phẩm"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/edttensanpham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sản phẩm"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edtgiaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá cả"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/edtsoluong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnthem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#48dbfb"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/btnsua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="35dp"
+            android:backgroundTint="#48dbfb"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/btnxoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#48dbfb"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvproduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>
